@@ -38,9 +38,23 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+function game(){
+    for(var x=1; x<=5; x++){
+        console.log(playRound(playerChoice,getComputerChoice(computerChoiceList)));  
+    }
+}
+
 var computerChoiceList = ["rock", "paper", "scissors"];
 var computerChoice = getComputerChoice(computerChoiceList)
 
 const playerChoice = "rock"; 
 
-console.log(playRound(playerChoice, computerChoice))
+console.log(game())
+
+//playRound(playerChoice, computerChoice)
+
+/*function game(){
+    for(var x=1; x<=5; x++){
+        console.log(getComputerChoice(computerChoiceList));  
+    }
+}*/
