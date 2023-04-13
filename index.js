@@ -40,21 +40,18 @@ function playRound(playerSelection, computerSelection){
 
 function game(){
     for(var x=1; x<=5; x++){
-        console.log(playRound(playerChoice,getComputerChoice(computerChoiceList)));  
+        playRound(playerChoice,getComputerChoice(computerChoiceList));  
     }
 }
+
+
+
+let choice = prompt("What's your sign?");
+let playerChoice = choice.toLowerCase(); 
 
 var computerChoiceList = ["rock", "paper", "scissors"];
 var computerChoice = getComputerChoice(computerChoiceList)
 
-const playerChoice = "rock"; 
+//const playerChoice = "rock"; 
 
-console.log(game())
-
-//playRound(playerChoice, computerChoice)
-
-/*function game(){
-    for(var x=1; x<=5; x++){
-        console.log(getComputerChoice(computerChoiceList));  
-    }
-}*/
+console.log(game());
